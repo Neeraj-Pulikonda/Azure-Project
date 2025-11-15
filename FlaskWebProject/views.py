@@ -115,7 +115,6 @@ def authorized():
         _save_cache(cache)
         # LOG
         LOG.info('INFO: User Logged In...')
-        LOG.warning('WARNING: Login Sucessful....Valid username or password for user:' + str(user))
     return redirect(url_for('home'))
 
 @app.route('/logout')
