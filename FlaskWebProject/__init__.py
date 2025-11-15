@@ -16,7 +16,7 @@ LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 streamHandler = logging.StreamHandler()
 streamHandler.setLevel(logging.INFO)
-LOG.addHandler(stremHandler)
+LOG.addHandler(streamHandler)
 
 Session(app)
 db = SQLAlchemy(app)
